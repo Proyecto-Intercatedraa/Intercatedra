@@ -28,3 +28,7 @@
 [0530/164042.562:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
 [0530/164043.317:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
 [0530/164043.320:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0530/173953.448:INFO:CONSOLE(21172)] "THREE.WebGLRenderer 92", source: file:///C:/Program%20Files/AnyLogic%208.9%20Personal%20Learning%20Edition/plugins/com.anylogic.graphics3d_8.9.0.202404161236/static/build/three.js (21172)
+[0530/173954.123:INFO:CONSOLE(3660)] "THREE.ColladaLoader: File version 1.4.0", source: file:///C:/Program%20Files/AnyLogic%208.9%20Personal%20Learning%20Edition/plugins/com.anylogic.graphics3d_8.9.0.202404161236/static/libs/ColladaLoader.js (3660)
+[0530/173954.154:INFO:CONSOLE(255)] "Loaded: file:C:/Users/facu_/OneDrive/Escritorio/Facultad/4to Año 1er cuatri/Integrador-Modelo y simu - Ingenieria de Software 3/Proyecto-Intercatedra/3d/atm.dae", source: file:///C:/Program%20Files/AnyLogic%208.9%20Personal%20Learning%20Edition/plugins/com.anylogic.graphics3d_8.9.0.202404161236/static/init.js (255)
+[0530/173954.154:INFO:CONSOLE(271)] "load end: file:C:/Users/facu_/OneDrive/Escritorio/Facultad/4to Año 1er cuatri/Integrador-Modelo y simu - Ingenieria de Software 3/Proyecto-Intercatedra/3d/atm.dae", source: file:///C:/Program%20Files/AnyLogic%208.9%20Personal%20Learning%20Edition/plugins/com.anylogic.graphics3d_8.9.0.202404161236/static/init.js (271)
