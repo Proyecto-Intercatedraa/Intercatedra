@@ -508,6 +508,40 @@
 					</Points>
 				</Connector>
 			</Connectors>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[int]]></ReturnType>
+					<Id>1718113120266</Id>
+					<Name><![CDATA[ObtenerIndiceColaMasCorta]]></Name>
+					<X>50</X><Y>60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[int[] tamanos = {CajeroAutomatico.size(), CajeroAutomatico2.size(), CajeroAutomatico3.size(), CajeroAutomatico4.size(), CajeroAutomatico5.size()};
+System.out.println(Arrays.toString(tamanos));
+
+// Encontrar el cajero automático con la cola más corta
+int indiceMinimo = -1; // Inicializar a -1 para indicar que aún no se ha encontrado ningún cajero con una cola no vacía
+for (int i = 0; i < tamanos.length; i++) {
+    if (tamanos[i] > 0 && (indiceMinimo == -1 || tamanos[i] < tamanos[indiceMinimo])) {
+        indiceMinimo = i;
+        System.out.println("Nuevo índice mínimo: " + indiceMinimo);
+    }
+}
+
+if (indiceMinimo != -1) {
+    System.out.println("Índice final: " + (indiceMinimo + 1));
+    return indiceMinimo + 1; // Devolver el índice del cajero automático con la cola más corta
+} else {
+    // Toma una acción apropiada si no hay cajeros disponibles
+    // Por ejemplo, dirigir al cliente al primer cajero disponible o al cajero de tu elección
+    return tamanos.length; // Por ejemplo, dirige al cliente al primer cajero
+}
+]]></Body>
+				</Function>
+			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1717080305934</Id>
@@ -557,7 +591,7 @@
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1]]></Code>
+								<Code><![CDATA[2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 							</Value>
 						</Parameter>
@@ -655,7 +689,7 @@
 										<GenericParameterSubstituteReference>
 											<PackageName><![CDATA[banco]]></PackageName>
 											<ClassName><![CDATA[Persona]]></ClassName>
-											<ItemName><![CDATA[1717096877043]]></ItemName>
+											<ItemName><![CDATA[1717097224746]]></ItemName>
 										</GenericParameterSubstituteReference>
 									</GenericParameterSubstitute>
 									<Parameters>
@@ -992,6 +1026,9 @@
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[type]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.TYPE_EXIT_NUMBER]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition1]]></Name>
@@ -1038,6 +1075,10 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[exitNumber]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[ObtenerIndiceColaMasCorta()
+]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
