@@ -519,26 +519,20 @@
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[int[] tamanos = {CajeroAutomatico.size(), CajeroAutomatico2.size(), CajeroAutomatico3.size(), CajeroAutomatico4.size(), CajeroAutomatico5.size()};
-System.out.println(Arrays.toString(tamanos));
+					<Body><![CDATA[
+int[] cajeros = new int[]{CajeroAutomatico3.size(), CajeroAutomatico.size(), CajeroAutomatico5.size(), CajeroAutomatico4.size(), CajeroAutomatico2.size()};
 
-// Encontrar el cajero automático con la cola más corta
-int indiceMinimo = -1; // Inicializar a -1 para indicar que aún no se ha encontrado ningún cajero con una cola no vacía
-for (int i = 0; i < tamanos.length; i++) {
-    if (tamanos[i] > 0 && (indiceMinimo == -1 || tamanos[i] < tamanos[indiceMinimo])) {
-        indiceMinimo = i;
-        System.out.println("Nuevo índice mínimo: " + indiceMinimo);
+int cajeroVacio = (int) Math.round(uniform(1, 5));
+
+
+for (int i = 0; i < cajeros.length; i++) {
+    if (cajeros[i] == 0) {
+        cajeroVacio = i + 1;
+        break;
     }
 }
 
-if (indiceMinimo != -1) {
-    System.out.println("Índice final: " + (indiceMinimo + 1));
-    return indiceMinimo + 1; // Devolver el índice del cajero automático con la cola más corta
-} else {
-    // Toma una acción apropiada si no hay cajeros disponibles
-    // Por ejemplo, dirigir al cliente al primer cajero disponible o al cajero de tu elección
-    return tamanos.length; // Por ejemplo, dirige al cliente al primer cajero
-}
+return cajeroVacio;
 ]]></Body>
 				</Function>
 			</Functions>
