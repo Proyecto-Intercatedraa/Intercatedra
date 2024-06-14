@@ -108,92 +108,6 @@
 			</ScaleRuler>
 			<CurrentLevel>1717080305940</CurrentLevel>
 			<ConnectionsId>1717080305934</ConnectionsId>
-			<Variables>
-				<Variable Class="PlainVariable">
-					<Id>1718202972462</Id>
-					<Name><![CDATA[tiempoEsperaPromedio]]></Name>
-					<X>60</X><Y>640</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1718202988443</Id>
-					<Name><![CDATA[tiempoServicioPromedio]]></Name>
-					<X>60</X><Y>670</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1718203008068</Id>
-					<Name><![CDATA[longitudPromedioCola]]></Name>
-					<X>270</X><Y>640</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1718203030250</Id>
-					<Name><![CDATA[utilizacionCajeros]]></Name>
-					<X>270</X><Y>670</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1718203141979</Id>
-					<Name><![CDATA[tasaLlegadaClientes]]></Name>
-					<X>60</X><Y>710</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1718203165199</Id>
-					<Name><![CDATA[tiempoPromedioSistema]]></Name>
-					<X>270</X><Y>700</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1718203182443</Id>
-					<Name><![CDATA[numeroPromedioClientes]]></Name>
-					<X>270</X><Y>740</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-			</Variables>
 			<Connectors>
 				<Connector>
 					<Id>1717089186173</Id>
@@ -869,7 +783,7 @@ return cajeroVacio;
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1]]></Code>
+								<Code><![CDATA[1.5]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 							</Value>
 						</Parameter>
@@ -2771,7 +2685,7 @@ return cajeroVacio;
     			<BarChart>
 					<Id>1718197796680</Id>
 					<Name><![CDATA[chart]]></Name>
-					<X>660</X><Y>0</Y>
+					<X>660</X><Y>10</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3015,7 +2929,7 @@ return cajeroVacio;
 						<ColorHighPercent>-29696</ColorHighPercent>
 						<ColorMean>-12004916</ColorMean>
 						<LineWidth>1</LineWidth>						
-						<Title><![CDATA[tiempo en la distribución del sistema (Cajero Automático 4)]]></Title>							
+						<Title><![CDATA[tiempo en la distribución del sistema (Cajero Automático 2)]]></Title>							
 					</HistogramDataExpression>
     			</Histogram>
 			</Presentation>
